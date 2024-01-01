@@ -3,102 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-
-    <style>
-        body{
-    background-color: black;
-}
-.Title{
-    background-color: chocolate;
-    height: 80px;
-    text-align: center;
-    padding: 10px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    
-    
-}
- 
- /*Hader Div*/
-.Title header h1{
-    text-decoration: none;
-    color: aliceblue;
-}
-.Title header h3{
-    background-color: rgb(255, 38, 0);
-    text-decoration: none;
-    color: aliceblue;
-}
-   /* image Div */
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    max-width: 100%;
-    margin: 4% 0% 0% 2%;
-}
-.gallery img{
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit:cover;
-    transition: scale 350ms ease,opacity 350ms linear;
-}
-
- /*image hover*/ 
-.gallery:has(img:hover) img:not(:hover){
-    scale: 0.8;
-    opacity: 0.5;
-}
-.gallery img:hover{
-    box-shadow: 0 0 5px aqua, 0 0 15px  aqua,  0 0 25px   aqua,  0 0 100px  aqua;
-    cursor: pointer;
-    
-}
-/*fOOTER*/
-.footer{
-    background-color: rgb(17, 243, 17);
-    height: 100px;
-    padding: 50px;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-
-}
-.footer h2{
-   
-    text-decoration: none;
-    color: rgb(24, 8, 250);
-    text-align: center;
-}
-    </style>
+    <title>Your Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="Title">
-        <header>
-            <h1>MY PHOTOGRAPHY</h1><br>
-            <!-- <h3>All Photo Shot on Reamle GT Neo 3T</h3> -->
-        </header>
-    </div>
 
- <div class="gallery">
-    <img src="img1.jpeg" alt="image">
-    <img src="img2.jpeg" alt="image">
-    <img src="img3.jpg" alt="image">
-    <img src="img4.jpeg" alt="image">
-    <img src="img5.jpeg" alt="image">
-    <img src="img6.jpg" alt="image">
-    <img src="img7.jpg" alt="image">
-    <img src="img8.jpg" alt="image">
-    <img src="img9.jpg" alt="image">
-    <img src="img10.jpg" alt="image">
-    <img src="img11.jpg" alt="image">
-    <img src="img12.jpg" alt="image">
- </div>
 
- <div class="footer">
-    <footer>
-        <h2>Thank you for visiting my website</h2>
+</style>
+<body >
+
+    <header>
+        <h1 class="HQ">AKASH'S PHOTOGRAPHY</h1>
+    </header>
+
+    <nav>
+        <div class="left-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Type To text">
+            <a href="#"> <button class="btn">Search</button></a>
+        </div>
+        <div class="right-nav">
+            <a href="login.html">Login</a>
+            <a href="singnup.html">Sign In</a>
+        </div>
+    </nav>
+
+    <section class="content">
+        <h2>NATURE SHOT</h2>
+        <div class="gallery">
+            <img src="img1.jpeg" alt="image">
+            <img src="img2.jpeg" alt="image">
+            <img src="img3.jpg" alt="image">
+            <img src="img4.jpeg" alt="image">
+            <img src="img5.jpeg" alt="image">
+            <img src="img6.jpg" alt="image">
+            <img src="img7.jpg" alt="image">
+            <img src="img8.jpg" alt="image">
+            <img src="img9.jpg" alt="image">
+            <img src="img10.jpg" alt="image">
+            <img src="img11.jpg" alt="image">
+            <img src="img12.jpg" alt="image">
+         </div>
+        <!-- Include your content here: Photo, Video, Slides, and Description -->
+    </section>
+
+    <footer class="foot">
+        <div class=" icons">
+            <a href="https://www.facebook.com/profile.php?id=100064742949991&mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://instagram.com/_crazy_a_k_a_s_h_?igshid=MzNlNGNkZWQ4Mg=="><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://twitter.com/AkashDa67832235?s=09"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+        </div>
+        <p>akashdas85093@email.com | Phone: +91 8509345351</p>
+        <p class="_">________________________________________________________________________________________</p>
+        <p class="copyright"> Photography © 2024- All Rights Reserved</p>
+        <a href="#" class="fa-brands fa-facebook"></a>
+        
     </footer>
- </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
