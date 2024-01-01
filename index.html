@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        body{
+    background-color: black;
+}
+.Title{
+    background-color: chocolate;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+    
+}
+ 
+ /*Hader Div*/
+.Title header h1{
+    text-decoration: none;
+    color: aliceblue;
+}
+.Title header h3{
+    background-color: rgb(255, 38, 0);
+    text-decoration: none;
+    color: aliceblue;
+}
+   /* image Div */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    max-width: 100%;
+    margin: 4% 0% 0% 2%;
+}
+.gallery img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit:cover;
+    transition: scale 350ms ease,opacity 350ms linear;
+}
+
+ /*image hover*/ 
+.gallery:has(img:hover) img:not(:hover){
+    scale: 0.8;
+    opacity: 0.5;
+}
+.gallery img:hover{
+    box-shadow: 0 0 5px aqua, 0 0 15px  aqua,  0 0 25px   aqua,  0 0 100px  aqua;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="Title">
+        <header>
+            <h1>MY PHOTOGRAPHY</h1><br>
+            <h3>All Photo Shot on Reamle GT Neo 3T</h3>
+        </header>
+    </div>
+
+ <div class="gallery">
+    <img src="img1.jpeg" alt="image">
+    <img src="img2.jpeg" alt="image">
+    <img src="img3.jpg" alt="image">
+    <img src="img4.jpeg" alt="image">
+    <img src="img5.jpeg" alt="image">
+    <img src="img6.jpg" alt="image">
+    <img src="img7.jpg" alt="image">
+    <img src="img8.jpg" alt="image">
+    <img src="img9.jpg" alt="image">
+    <img src="img10.jpg" alt="image">
+    <img src="img11.jpg" alt="image">
+    <img src="img12.jpg" alt="image">
+ </div>
+</body>
+</html>
